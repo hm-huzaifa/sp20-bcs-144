@@ -1,0 +1,68 @@
+.container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: blueviolet;
+    margin-bottom: 2%;
+}
+
+.layout {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /* grid-gap: 10px; */
+    background-color: chartreuse;
+    
+}
+
+.navbar {
+    text-align: center;
+    overflow: hidden;
+    background-color: black;
+}
+
+.navbar li {
+    display: inline;
+    float: right;
+
+}
+.navbar li:hover {
+    display: inline;
+    background-color: brown;
+}
+
+.nav-img {
+    width: 10%;
+    float: left;
+}
+
+div {
+    border: 1px solid black;
+    padding: 10px;
+    margin: 1%;
+}
+
+.content {
+    overflow: hidden;
+}
+.left {
+    float: left;
+    width: 40%;
+    background-color: crimson;
+}
+
+.center {
+    width: 10%;
+    float: left;
+    text-align: center;
+}
+
+.right {
+    float: right;
+    width: 40%;
+    background-color: aqua;
+}
+
+.footer {
+    text-align: center;
+}

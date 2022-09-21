@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+hr {
+    color: rgb(44, 44, 44);
+    width: 60%;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 0.4fr 1fr;
+    grid-gap: 10px;
+    /* background: darkslategray; */
+}
+
+.personal {
+    background: linear-gradient(to bottom, rgb(189, 195, 199, 1), rgb(44, 62, 80, 0.7));
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+}
+
+.imgCard {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    background: brown;
+    margin-top: 20%;
+}
+
+.image {
+    border-radius: 50%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.name {
+    font-size: xx-large;
+    font-weight: 400;
+    text-align: center;
+    /* background: darkmagenta; */
+    width: 100%;
+}
+
+.name hr {
+    /* width: 90%; */
+    margin-bottom: 10px;
+}
+
+.name h4 {
+    margin-bottom: 5px;
+}
+.name span {
+    font-size: x-large;
+    font-weight: 400;
+}
+
+.personalCard {
+    margin-top: 30px;
+    text-align: center;
+    align-items: center;
+    font-size: large;
+    width: 100%;
+}
+
+.personalCard h2 {
+    margin-bottom: 5px;
+}
+
+.personalCard ul {
+    list-style: none;
+    text-align: center;
+    align-items: center;
+    margin-right: 8%;
+}
+.personalCard ul li {
+    margin-bottom: 5px;
+    text-align: center  ;
+}
+.personalCard ul li a{
+    text-decoration: none;
+}
+
+.profile {
+    margin-top: 30px;
+    text-align: center;
+    font-size: large;
+    width: 100%;
+}
+
+.profile h2 {
+    margin-bottom: 5px;
+}
+
+.profile hr {
+    margin-bottom: 5px;
+}
+
+.profile p {
+    margin: 5%;
+    margin-top: 2%;
+    padding-left: 15%;
+    padding-right: 15%;
+}
+
+.professional {
+    background: linear-gradient(to top, rgb(189, 195, 199, .6), rgb(44, 62, 80, 0.6));
+    /* background: linear-gradient(to top, #bdc3c7, #2c3e50);     */
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    align-content: flex-start;
+    padding: 1%;
+}
+
+.professional hr {
+    width: 50%;
+}
+
+.fieldCard {
+    margin-top: 30px;
+    /* text-align: center; */
+    font-size: large;
+    width: 100%;
+    padding: 1%;
+}
+
+.fieldCard h2 {
+    text-align: center;
+}
+
+.fieldCard ul{
+    list-style: none;
+}
+.fieldCard ul li{
+    margin-bottom: 10px;
+}
+.workCard {
+    margin: 2%;
+}
+
+.workCard h4 {
+    font-weight: 700;
+    font-size:  larger;
+}
+.workCard h4 span {
+    font-weight: 500;
+    font-size: large;
+}
