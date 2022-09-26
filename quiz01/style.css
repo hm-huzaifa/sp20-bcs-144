@@ -12,6 +12,8 @@
     /* position: absolute; */
     top: 0;
     left: 0;
+    position: sticky;
+    z-index: 1;
 }
 .logo {
     width: 10%;
@@ -219,4 +221,263 @@
     border-radius: 100px;
     margin-top: 10%;
     cursor: pointer;
+}
+
+.product-slider {
+    width: 100%;
+    margin-top: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.product-slider > div > i {
+    color: #0CD428;
+    font-size: x-large;
+}
+
+.left-arrow {
+    margin-right: 1%;
+}
+
+.right-arrow {
+    margin-left: 1%;
+}
+
+.product-container {
+    width: 70%;
+    overflow: hidden;    
+    display: flex; 
+    justify-content: flex-start;    
+    align-items: center; 
+}
+
+.product-img {
+    width: 10%;
+    margin-right: 11%;
+}
+
+.shipping-container {
+    width: 100%;
+    margin-top: 5%;
+    border-top: 1px solid #696969;
+    border-bottom: 1px solid #696969;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.shipping {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+
+.shipping a {
+    width: 30%;
+    text-decoration: none;
+    color: #000000;
+    
+}
+
+.shipping-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.shipping-item {
+    font-size: xx-large;
+    color:#0CD428;
+}
+
+
+.shipping-item-star{
+    font-size: medium;
+    color:#0CD428;
+}
+
+.shipping-text {
+    margin-left: 5%;
+}
+
+.shipping-text-title {
+    font-weight: bold;
+}
+
+.popular-catagories {
+    width: 100%;
+    margin-top: 5%;
+}
+
+.popular-catagories h2{
+    text-align: center;
+font-size: xx-large;
+}
+
+.popular-catagories ul {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+}
+
+.popular-catagories ul li{
+    width: 23%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+
+.category-box {
+    text-decoration: none;
+    color: #000000;
+    width: 100%;
+}
+
+.category-box img {
+    width: 100%;
+}
+
+.category-inner-text {
+    font-size: xx-large;
+    font-weight: bold;
+    color: #333333;
+}
+
+.footer {
+    margin-top: 8%;
+    background-color: #F2F2F2;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-form {
+    width: 50%;
+    margin: 3%;
+    background-color: #ffffff;
+}
+
+.form-wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10%;
+        /* border: 2px solid black; */
+
+}
+
+.form-wrapper h4{
+    font-size: x-large;
+    color: #333333;
+
+}
+
+.email {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.email input {
+    width: 80%;
+    height: 3rem;
+    padding: 0 0 0 5%;
+    background-color: #F2F2F2;
+    border: none;
+    border-bottom: 2px solid #0CD428;
+    margin-bottom: 4%;
+    font-size: medium;
+}
+
+.email button {
+    color: #ffffff;
+    background-color: #333333;
+    width: 85%;
+    height: 3rem;
+    padding: 0 0 0 5%;
+    border: none;
+    margin-bottom: 2%;
+    font-size: medium;
+}
+
+
+.terms {
+    /* border: 2px solid black; */
+    width: 70%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.terms input {
+    width: 30px;
+    height: 30px;
+    margin-top: 5%;
+    margin-left: 2%;
+}
+
+.terms p {
+    width: 80%;
+    margin-left: 5%;
+    color: #A0A0A3;
+} 
+
+.terms-link {
+    width: 70%;
+    text-align: center;
+    color: #A0A0A3;
+}
+
+.terms-link a {
+    text-decoration: none;
+    color: #0CD428;
+
+}
+
+.footer-content {
+    width: 50%;
+    margin: 5%;
+}
+
+.footer-ul {
+    width: 100%;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.footer-list-wrapper { 
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-bottom: 5%;
+    margin-right: 3%;
+    font-size: 0.9rem;
+    
+}
+.footer-list-wrapper a{
+    text-decoration: none;
+    color: #000000;
+    margin-top: 3%;
+    font-size: medium;
+    font-weight: 300;
+}
+
+.footer-list-wrapper a:first-child{
+    color: #000000;
+    margin-bottom: 5%;
 }
