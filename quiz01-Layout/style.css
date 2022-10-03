@@ -215,6 +215,8 @@
     background-color: #fe8a01;
     width: 10rem;
     height: 3rem;
+    /* width: 100%; */
+    /* height: 40%; */
     font-weight: 500;
     text-align: center;
     position: relative;
@@ -480,4 +482,150 @@ font-size: xx-large;
 .footer-list-wrapper a:first-child{
     color: #000000;
     margin-bottom: 5%;
+}
+
+/* Responsive */
+@media (max-width: 1400px) {
+}
+@media (max-width: 950px) {
+    html {
+        font-size: 70%;
+    }
+    .logo {
+        width: 25%;
+    }
+    .search-wrapper{
+        width: 80%;
+    }
+
+    .action-btns {
+        margin-right: 10%;
+        visibility: hidden;
+    }
+    .fa-bars {
+        visibility: visible;
+    }
+
+    .navbar ul li{
+        margin-right: 5%;
+    }
+
+    .banner-title {
+        font-weight: 700;
+        font-size: x-large;
+    }
+
+    .product-img {
+        width: 14%;
+        margin-right: 20%;
+    }
+    
+    .category-inner-text {
+        font-size: large;
+        font-weight: bold;
+        color: #333333;
+    }
+}
+
+@media (max-width: 600px) {
+    html {
+        font-size: 40%;
+    }
+    .logo {
+        width: 25%;
+    }
+    .search-wrapper{
+        width: 70%;
+        overflow: hidden;
+    }    
+    .row2 {
+        visibility: hidden;
+    }
+    
+.section-1 {
+    display: flex;
+    flex-direction: column;
+ }
+.banner-title {
+    font-weight: 700;
+    font-size: large;
+}
+.shop-now-btn {
+    font-size: x-small;   
+}
+
+.product-img {
+    width: 30%;
+    margin-right: 21%;
+}
+
+.shipping-container {
+    visibility: hidden;
+}
+.category-inner-text {
+    font-size: large;
+    font-weight: bold;
+    color: #333333;
+}
+.popular-catagories ul li{
+    width: 40%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+
+.footer {
+    margin-top: 8%;
+    flex-direction: column;
+}
+
+.footer-list-wrapper {
+    padding: 8%;
+}
+}
+
+@media (max-width: 350px) {
+    html {
+        font-size: 35%;
+    }
+
+    .logo {
+        margin-left: -10%;
+    } 
+
+    
+    .logo img {
+        width: 30rem; 
+        margin-right: 25%;
+    }
+
+    .search-wrapper{
+        visibility: hidden;
+    }    
+    
+    .action-btns {
+        width: 0%;
+        margin-right: 40%;
+    }
+    .fa-bars {
+        margin-right: 50%;
+    }
+    .banner-title {
+        font-weight: 700;
+        font-size: xx-small;
+    }
+
+    .shop-now-btn {
+        font-size: xx-small;   
+    }
+
+    .product-img {
+        width: 100%;
+        margin-right: 35%;
+        margin-left: 10%;
+    }
+    
+    .footer-list-wrapper {
+        padding: 10%;
+    }
+
 }
