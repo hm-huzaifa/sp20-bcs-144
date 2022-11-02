@@ -1,0 +1,35 @@
+<h2><%= pageTitle %></h2>
+<a href="/movies/add" class="btn btn-info">Add New Movie</a>
+<table class="table">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Genre</th>
+      <th>Year</th>
+      <th>Actions</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% for( let index = 0; index < movies.length; index++ ) { %>
+    <tr>
+      <td><%=movies[index].name %></td>
+      <td><%=movies[index].genre %></td>
+      <td><%=movies[index].year %></td>
+      <td>
+        <a
+          href="/movies/edit/<%=movies[index]._id  %>"
+          class="btn btn-warning btn-sm"
+          >Edit</a
+        >
+      </td>
+      <td>
+        <a
+          href="/movies/delete/<%=movies[index]._id  %>"
+          class="btn btn-danger btn-sm"
+          >Delete</a
+        >
+      </td>
+    </tr>
+    <% } %>
+  </tbody>
+</table>
