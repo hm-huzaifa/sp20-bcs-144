@@ -1,4 +1,4 @@
-import logo from "./logo.svg";
+// import logo from "./logo.svg";
 import ghazi from "./ghazi.png";
 import hash from "./hash.png";
 import hanno from "./hanno.png";
