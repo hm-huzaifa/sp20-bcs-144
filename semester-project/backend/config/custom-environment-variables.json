@@ -1,0 +1,5 @@
+{
+    "db": "db",
+    "port": "port",
+    "JWT_SECRET": "JWT_SECRET"
+}
