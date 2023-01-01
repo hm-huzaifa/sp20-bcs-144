@@ -4,8 +4,8 @@ var config = require("config");
 const mongoURI = config.get("db");
 
 const connectToMongo = () => {
-  mongoose.connect(mongoURL, () => {
-    console.log("MongoDB connected successfully");
+  mongoose.connect(mongoURI, () => {
+    console.log("Connected to Mongo Successfully");
   });
 };
 
