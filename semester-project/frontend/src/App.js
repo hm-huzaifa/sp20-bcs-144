@@ -7,18 +7,22 @@ import "./App.css";
 // import SignUp from "./components/SignUp";
 // import NoteState from "./context/notes/NoteState";
 
-import ResponsiveAppBar from "./components/ultraStore/ResponsiveAppBar";
+import ResponsiveAppBar from "./components/ultraStore/Navbar/ResponsiveAppBar";
 
 import ProductState from "./context/product/ProductState";
 
-import Navbar from "./components/ultraStore/Navbar";
+import Navbar from "./components/ultraStore/Navbar/Navbar";
 import About from "./components/ultraStore/About";
 import Alert from "./components/ultraStore/Alert";
-import SignInSide from "./components/ultraStore/SignInSide";
-import SignUpSide from "./components/ultraStore/SignUpSide";
-import Home from "./components/ultraStore/Home";
-import AddProduct from "./components/ultraStore/AddProduct";
-import Products from "./components/ultraStore/Products";
+
+import Login from "./components/ultraStore/Authentication/Login";
+import SignUp from "./components/ultraStore/Authentication/SignUp";
+import Home from "./components/ultraStore/Home/Home";
+
+import AddProduct from "./components/ultraStore/Product/AddProduct";
+import Products from "./components/ultraStore/Product/Products";
+import ProductsBrand from "./components/ultraStore/Product/ProductsBrand";
+import ProductsCategory from "./components/ultraStore/Product/ProductsCategory";
 
 function App() {
   const [alert, setAlert] = useState(null);
@@ -33,30 +37,49 @@ function App() {
     }, 3000);
   };
 
+  const [brandProducts, setBrandProducts] = useState([]);
+  const [categoryProducts, setCategoryProducts] = useState([]);
+
   return (
     <>
       <ProductState>
         <Router>
           <Navbar />
-          {/* <ResponsiveAppBar /> */}
           <Alert alert={alert} />
-          <div className="container">
+          <>
             <Routes>
               <Route exact path="/" element={<Home />} />
               <Route
                 exact
                 path="/login"
-                element={<SignInSide showAlert={showAlert} />}
+                element={<Login showAlert={showAlert} />}
               />
               <Route
                 exact
                 path="/signup"
-                element={<SignUpSide showAlert={showAlert} />}
+                element={<SignUp showAlert={showAlert} />}
               />
               <Route
                 exact
                 path="/products"
-                element={<Products byBrand={true} />}
+                element={
+                  <Products
+                    setBrandProducts={setBrandProducts}
+                    setCategoryProducts={setCategoryProducts}
+                  />
+                }
+              />
+              <Route
+                exact
+                path="/products/brand"
+                element={<ProductsBrand brandProducts={brandProducts} />}
+              />
+              <Route
+                exact
+                path="/products/category"
+                element={
+                  <ProductsCategory categoryProducts={categoryProducts} />
+                }
               />
               <Route
                 exact
@@ -69,7 +92,7 @@ function App() {
                 element={<About showAlert={showAlert} />}
               />
             </Routes>
-          </div>
+          </>
         </Router>
       </ProductState>
     </>

@@ -37,8 +37,13 @@ const ProductState = (props) => {
     );
     const json = await response.json();
 
-    setProduct(json);
-    return product;
+    // let newProducts = JSON.?parse(JSON.stringify(product));
+
+    const newProducts = product.filter((pro) => {
+      return pro._brand !== pro;
+    });
+
+    setProduct(newProducts);
   };
 
   const getProductByCategory = async (category) => {
